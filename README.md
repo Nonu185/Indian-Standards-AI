@@ -1,19 +1,35 @@
-SIH26108-Indian-Standards-AI/
+# Indian Standards AI
+
+AI-Powered Recommendation Engine for Identifying Applicable Indian Standards for Procurement Specifications.
+
+## Smart India Hackathon 2026
+
+**Problem Statement:** SIH26108  
+**Category:** Software  
+**Theme:** Smart Automation
+
+---
+
+## 📁 Project Folder Structure
+
+```text
+Indian-Standards-AI/
 │
-├── frontend/                              # React + Tailwind
+├── frontend/                              # React + Tailwind CSS
+│   │
 │   ├── public/
 │   │
 │   └── src/
 │       ├── assets/
 │       │
 │       ├── components/
-│       │   ├── common/                    # Buttons, Modal, Loader, etc.
-│       │   ├── layout/                    # Navbar, Sidebar, Layout
-│       │   ├── procurement/               # Procurement input/upload UI
-│       │   ├── standards/                 # Standard cards/details
-│       │   ├── recommendation/            # AI recommendation UI
-│       │   ├── graph/                     # Related standards graph
-│       │   └── specification/             # Specification generator UI
+│       │   ├── common/                    # Buttons, modals, loaders
+│       │   ├── layout/                    # Navbar, sidebar, layouts
+│       │   ├── procurement/               # Procurement UI
+│       │   ├── standards/                 # Standards UI
+│       │   ├── recommendation/            # AI recommendations
+│       │   ├── graph/                     # Standards relationship graph
+│       │   └── specification/             # Specification generator
 │       │
 │       ├── pages/
 │       │   ├── Login.jsx
@@ -26,144 +42,155 @@ SIH26108-Indian-Standards-AI/
 │       │   ├── KnowledgeGraph.jsx
 │       │   └── Specification.jsx
 │       │
-│       ├── services/
-│       │   ├── api.js
-│       │   ├── auth.service.js
-│       │   ├── procurement.service.js
-│       │   └── standards.service.js
-│       │
-│       ├── hooks/
-│       ├── context/
-│       ├── utils/
-│       └── types/
+│       ├── services/                      # API calls
+│       ├── hooks/                         # Custom React hooks
+│       ├── context/                       # Global state
+│       ├── utils/                         # Helper functions
+│       └── types/                         # Shared types
 │
 │
-├── backend/                               # Node.js + Express
+├── backend/                               # Node.js + Express.js
 │   │
 │   ├── src/
-│   │   ├── config/
-│   │   │   ├── db.js
-│   │   │   ├── env.js
-│   │   │   └── neo4j.js
 │   │   │
-│   │   ├── controllers/
-│   │   │   ├── auth.controller.js
-│   │   │   ├── procurement.controller.js
-│   │   │   ├── standards.controller.js
-│   │   │   └── recommendation.controller.js
-│   │   │
-│   │   ├── middleware/
-│   │   │   ├── auth.middleware.js
-│   │   │   ├── error.middleware.js
-│   │   │   └── upload.middleware.js
-│   │   │
-│   │   ├── models/
-│   │   │   ├── User.js
-│   │   │   ├── Procurement.js
-│   │   │   ├── Document.js
-│   │   │   ├── Requirement.js
-│   │   │   ├── Standard.js
-│   │   │   └── Recommendation.js
-│   │   │
-│   │   ├── routes/
-│   │   │   ├── auth.routes.js
-│   │   │   ├── procurement.routes.js
-│   │   │   ├── standards.routes.js
-│   │   │   └── recommendation.routes.js
+│   │   ├── config/                        # DB & environment config
+│   │   ├── controllers/                   # Request controllers
+│   │   ├── middleware/                    # Auth, upload, errors
+│   │   ├── models/                        # Database models
+│   │   ├── routes/                        # API routes
 │   │   │
 │   │   ├── services/
 │   │   │   │
 │   │   │   ├── ai/
-│   │   │   │   ├── langchain/
-│   │   │   │   │   ├── documentLoader.js
-│   │   │   │   │   ├── textSplitter.js
-│   │   │   │   │   ├── embeddings.js
-│   │   │   │   │   ├── retriever.js
-│   │   │   │   │   └── ragChain.js
-│   │   │   │   │
-│   │   │   │   ├── chains/
-│   │   │   │   │   ├── requirementChain.js
-│   │   │   │   │   └── recommendationChain.js
-│   │   │   │   │
-│   │   │   │   └── prompts/
-│   │   │   │       ├── requirement.prompt.js
-│   │   │   │       ├── recommendation.prompt.js
-│   │   │   │       └── explanation.prompt.js
+│   │   │   │   ├── langchain/             # LangChain.js
+│   │   │   │   ├── chains/                # AI chains
+│   │   │   │   └── prompts/               # AI prompts
 │   │   │   │
-│   │   │   ├── standards/
-│   │   │   │   ├── standardsService.js
-│   │   │   │   └── standardsSearch.js
-│   │   │   │
-│   │   │   ├── procurement/
-│   │   │   │   └── procurementService.js
-│   │   │   │
-│   │   │   ├── certification/
-│   │   │   │   └── certificationEngine.js
-│   │   │   │
-│   │   │   ├── versioning/
-│   │   │   │   └── versionChecker.js
-│   │   │   │
-│   │   │   ├── knowledgeGraph/
-│   │   │   │   └── standardsGraph.js
-│   │   │   │
-│   │   │   └── specification/
-│   │   │       └── specificationService.js
+│   │   │   ├── standards/                 # Standards processing
+│   │   │   ├── procurement/               # Procurement logic
+│   │   │   ├── certification/             # Certification rules
+│   │   │   ├── versioning/                # Version/amendment checks
+│   │   │   ├── knowledgeGraph/             # Neo4j graph
+│   │   │   └── specification/             # Specification generation
 │   │   │
-│   │   ├── validators/
-│   │   ├── utils/
-│   │   ├── jobs/
-│   │   ├── types/
+│   │   ├── validators/                    # Request validation
+│   │   ├── utils/                         # Backend utilities
+│   │   ├── jobs/                          # Automation/background jobs
+│   │   ├── types/                         # Backend types
 │   │   ├── app.js
 │   │   └── server.js
 │   │
-│   └── tests/
+│   └── tests/                             # Backend tests
 │
 │
-├── data/                                  # Project data
+├── data/                                  # Dataset & project data
 │   ├── raw/                               # Original collected data
 │   ├── processed/                         # Cleaned data
-│   ├── standards/                         # Standards metadata
+│   ├── standards/                         # Standards dataset
 │   ├── embeddings/                        # Generated embeddings
 │   ├── knowledge-graph/                   # Graph data
-│   └── sample-tenders/                    # Sample PDFs
+│   └── sample-tenders/                    # Sample tender documents
 │
 │
 ├── scripts/
-│   ├── ingestion/                         # Import/clean standards
-│   ├── database/                          # DB setup/migrations
-│   └── dev/                               # Developer scripts
+│   ├── ingestion/                         # Data ingestion scripts
+│   ├── database/                          # Database scripts
+│   └── dev/                               # Development scripts
 │
 │
 ├── docs/
-│   ├── architecture/
-│   │   └── SYSTEM_FLOW.md
-│   │
-│   ├── ai-pipeline/
-│   │   └── RAG_PIPELINE.md
-│   │
-│   ├── api/
-│   │   └── API_DOCUMENTATION.md
-│   │
-│   ├── database/
-│   │   └── DATABASE_SCHEMA.md
-│   │
-│   ├── team/
-│   │   ├── TEAM_GUIDE.md
-│   │   └── TASK_ASSIGNMENT.md
-│   │
-│   └── demo/
-│       └── DEMO_FLOW.md
+│   ├── architecture/                      # System architecture
+│   ├── ai-pipeline/                       # AI/RAG documentation
+│   ├── api/                               # API documentation
+│   ├── database/                          # Database documentation
+│   ├── team/                              # Team documentation
+│   └── demo/                              # Demo documentation
 │
 │
 ├── .github/
-│   └── workflows/
-│       └── ci.yml
+│   └── workflows/                         # GitHub Actions / CI
 │
-├── .env.example
+│
 ├── .gitignore
 ├── docker-compose.yml
-├── PROJECT_STRUCTURE.txt
 └── README.md
 
 
 
+
+
+## 🛠️ Technology Stack
+
+### 🎨 Frontend
+- **React.js** — User interface
+- **Vite** — Frontend build tool
+- **Tailwind CSS** — Styling and responsive UI
+- **React Router** — Application routing
+- **Axios** — API communication
+
+### ⚙️ Backend
+- **Node.js** — Backend runtime
+- **Express.js** — REST API and server
+- **JWT** — Authentication
+- **Multer** — Document/file uploads
+
+### 🤖 AI & RAG
+- **LangChain.js** — AI/RAG pipeline orchestration
+- **Google Gemini** — Large Language Model
+- **Embeddings** — Semantic representation of requirements and standards
+- **RAG (Retrieval-Augmented Generation)** — Context-aware recommendations
+- **Semantic Search** — Finding relevant Indian Standards
+
+### 🗄️ Databases
+- **PostgreSQL** — Application and standards metadata
+- **pgvector** — Vector storage and similarity search
+- **Neo4j** — Knowledge graph for relationships between standards
+
+### 📄 Document Processing
+- **PDF Parser** — Extract text from tender documents
+- **OCR** — Extract information from scanned documents
+- **Text Chunking** — Prepare documents for retrieval
+
+### 📊 Data & ML
+- **Python** — Data analysis and ML experimentation
+- **Pandas** — Data cleaning and analysis
+- **NumPy** — Numerical processing
+- **Scikit-learn** — ML models and evaluation
+- **Jupyter Notebook** — Data exploration and experiments
+
+### 🔄 Automation
+- **Node.js Background Jobs** — Automated processing
+- **Scheduled Jobs** — Standards/data updates
+- **GitHub Actions** — CI/CD and automation
+
+### 🧰 Development & Deployment
+- **Git** — Version control
+- **GitHub** — Collaboration and repository
+- **Docker** — Local development and services
+- **Vercel** — Frontend deployment
+- **Render / Railway** — Backend deployment
+
+
+
+
+
+                    ┌──────────────────┐
+                    │  React + Vite     │
+                    │  Tailwind CSS     │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │ Node.js + Express │
+                    └────────┬─────────┘
+                             │
+             ┌───────────────┼────────────────┐
+             ▼               ▼                ▼
+      ┌─────────────┐ ┌──────────────┐ ┌─────────────┐
+      │ LangChain.js│ │ PostgreSQL   │ │   Neo4j     │
+      │ + Gemini    │ │ + pgvector   │ │ Knowledge   │
+      │             │ │              │ │   Graph     │
+      └─────────────┘ └──────────────┘ └─────────────┘
+             │
+             ▼
+      AI Recommendation
