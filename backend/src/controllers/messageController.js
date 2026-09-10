@@ -26,7 +26,7 @@ const getMessages = async (req, res) => {
 
 const sendMessage = async (req, res) => {
   try {
-    const { content } = req.body;
+    const { content, recommendations, extractedRequirements } = req.body;
 
     if (!content || content.trim() === '') {
       return res.status(400).json({ error: 'Message content cannot be empty' });
@@ -46,17 +46,26 @@ const sendMessage = async (req, res) => {
       content: content.trim(),
     });
 
-    // 2. Temporary response — will be replaced by real AI pipeline in the next phase
-    const responseText =
-      'Your requirement has been received. The Indian Standards recommendation engine will analyze this requirement in the next phase.';
-
-    // 3. Save the assistant's response
-    const assistantMessage = await Message.create({
+    // 2. Build and save the assistant's response.
+    // If the caller provides a real AI summary + recommendations, persist them.
+    // Otherwise fall back to the placeholder text.
+    const hasAIResult = Array.isArray(recommendations) && recommendations.length > 0;
+    const assistantContent = content.trim(); // caller sends the summary as content
+    const assistantPayload = {
       chatId: req.params.chatId,
       userId: req.user._id,
       role: 'assistant',
-      content: responseText,
-    });
+      content: hasAIResult
+        ? assistantContent
+        : 'Your requirement has been received. The Indian Standards recommendation engine will analyze this requirement in the next phase.',
+    };
+    if (hasAIResult) {
+      assistantPayload.recommendations = recommendations;
+    }
+    if (extractedRequirements) {
+      assistantPayload.extractedRequirements = extractedRequirements;
+    }
+    const assistantMessage = await Message.create(assistantPayload);
 
     // 4. Update the chat title from the first user message if it's still "New Chat"
     let updatedChatTitle = null;

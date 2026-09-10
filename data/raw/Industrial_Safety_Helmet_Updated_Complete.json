@@ -1,0 +1,846 @@
+{
+  "product": {
+    "product_id": "industrial_safety_helmet",
+    "product_name": "Industrial Safety Helmet",
+    "product_category": "Personal Protective Equipment (PPE)",
+    "product_description": "Protective helmet intended to provide protection against falling objects and other hazards encountered in mining, tunnelling, quarrying, ship building, construction projects and similar industrial occupations.",
+    "synonyms": [
+      "Safety Helmet",
+      "Industrial Helmet",
+      "Protective Helmet",
+      "Hard Hat"
+    ]
+  },
+  "components": [
+    {
+      "component_id": "helmet_shell",
+      "type": "Shell",
+      "subtype": "Dome-shaped protective shell",
+      "material": [
+        "Non-metallic material",
+        "PVC grains or other suitable non-metallic compounds"
+      ],
+      "dimensions": [
+        {
+          "parameter": "Ventilation hole diameter",
+          "value": 6,
+          "unit": "mm",
+          "condition": "Maximum, where ventilation holes are provided"
+        },
+        {
+          "parameter": "Minimum spacing between adjacent ventilation hole edges",
+          "value": 15,
+          "unit": "mm",
+          "condition": "Where ventilation holes are provided"
+        },
+        {
+          "parameter": "Minimum ventilation holes per side",
+          "value": 3,
+          "unit": "holes",
+          "condition": "Where ventilation holes are provided"
+        },
+        {
+          "parameter": "Total aggregate area of ventilation holes",
+          "value": 300,
+          "unit": "mm²",
+          "condition": "Maximum, where ventilation holes are provided"
+        }
+      ],
+      "tolerances": [],
+      "properties": [
+        {
+          "parameter": "Shape",
+          "value": "Dome-shaped",
+          "unit": "",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Metal component through shell",
+          "value": "Not permitted",
+          "unit": "",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Brim",
+          "value": "Continuous around dome; with or without peak",
+          "unit": "",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Edges",
+          "value": "No sharp edges",
+          "unit": "",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Shock absorption",
+          "value": "Transmitted force not higher than 5 kN",
+          "unit": "",
+          "condition": "After specified conditioning"
+        },
+        {
+          "parameter": "Penetration resistance",
+          "value": "No piercing sufficient to touch headform; penetration/dent not exceeding 10 mm",
+          "unit": "",
+          "condition": "As tested under IS 2925"
+        },
+        {
+          "parameter": "Flammability resistance",
+          "value": "No flame emission after 5 seconds following removal of flame",
+          "unit": "",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Electrical resistance",
+          "value": "Leakage current not exceeding 3 mA",
+          "unit": "",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Water absorption",
+          "value": "Not more than 5 percent of shell mass",
+          "unit": "%",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Heat resistance",
+          "value": "Shell shall not separate, distort or soften",
+          "unit": "",
+          "condition": "Mandatory"
+        }
+      ],
+      "application": [
+        "Primary head protection against falling objects and industrial hazards"
+      ]
+    },
+    {
+      "component_id": "helmet_harness",
+      "type": "Harness",
+      "subtype": "Adjustable headband and cradle assembly",
+      "material": [
+        "Wear-resistant, non-irritant material suitable for headband and anti-concussion tapes"
+      ],
+      "dimensions": [
+        {
+          "parameter": "Headband width",
+          "value": 30,
+          "unit": "mm",
+          "condition": "Minimum"
+        },
+        {
+          "parameter": "Minimum shell-to-headband ventilation clearance",
+          "value": 5,
+          "unit": "mm",
+          "condition": "Except at general adjustment point"
+        },
+        {
+          "parameter": "Minimum anti-concussion tape width",
+          "value": 19,
+          "unit": "mm",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Minimum crown clearance",
+          "value": 30,
+          "unit": "mm",
+          "condition": "At smallest headband adjustment"
+        },
+        {
+          "parameter": "Minimum wearing height/depth of fit",
+          "value": 80,
+          "unit": "mm",
+          "condition": "At maximum headband adjustment"
+        },
+        {
+          "parameter": "Minimum cradle anchoring points",
+          "value": 4,
+          "unit": "points",
+          "condition": "Mandatory"
+        }
+      ],
+      "tolerances": [
+        {
+          "parameter": "Headband size",
+          "value": 10,
+          "unit": "mm",
+          "condition": "Permitted ± tolerance"
+        }
+      ],
+      "properties": [
+        {
+          "parameter": "Adjustment",
+          "value": "Adjustable to specified helmet size range",
+          "unit": "",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Skin safety",
+          "value": "Non-irritant and shall not cause skin disease",
+          "unit": "",
+          "condition": "Mandatory"
+        }
+      ],
+      "application": [
+        "Maintains helmet position and provides clearance between head and shell"
+      ]
+    },
+    {
+      "component_id": "chin_or_nape_strap",
+      "type": "Retention strap",
+      "subtype": "Chin strap or nape strap",
+      "material": [
+        "Wear-resistant material",
+        "Straps",
+        "Threads",
+        "Fastening devices"
+      ],
+      "dimensions": [
+        {
+          "parameter": "Chin strap width",
+          "value": 19,
+          "unit": "mm",
+          "condition": "Minimum, if chin strap is used"
+        },
+        {
+          "parameter": "Nape strap minimum depth",
+          "value": 115,
+          "unit": "mm",
+          "condition": "If nape strap is used"
+        }
+      ],
+      "tolerances": [],
+      "properties": [
+        {
+          "parameter": "Retention system",
+          "value": "Helmet shall be provided with either a chin strap or nape strap",
+          "unit": "",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Adjustability",
+          "value": "Adjustable fastening/positioning",
+          "unit": "",
+          "condition": "Mandatory"
+        }
+      ],
+      "application": [
+        "Secures helmet position during industrial work"
+      ]
+    },
+    {
+      "component_id": "helmet_cradle",
+      "type": "Cradle",
+      "subtype": "Internal suspension support",
+      "material": [
+        "Wear-resistant material suitable for suspension assembly"
+      ],
+      "dimensions": [],
+      "tolerances": [],
+      "properties": [
+        {
+          "parameter": "Function",
+          "value": "Sits over the human skull and supports positioning of the protective shell",
+          "unit": "",
+          "condition": "Used with headband and chin strap/nape strap"
+        },
+        {
+          "parameter": "Anchoring points",
+          "value": "Minimum 4",
+          "unit": "points",
+          "condition": "Mandatory"
+        }
+      ],
+      "application": [
+        "Supports helmet suspension system",
+        "Maintains clearance between head and protective shell"
+      ]
+    },
+    {
+      "component_id": "helmet_headband",
+      "type": "Headband",
+      "subtype": "Adjustable fitting band",
+      "material": [
+        "Wear-resistant non-irritant material"
+      ],
+      "dimensions": [
+        {
+          "parameter": "Width",
+          "value": 30,
+          "unit": "mm",
+          "condition": "Minimum"
+        }
+      ],
+      "tolerances": [
+        {
+          "parameter": "Size",
+          "value": 10,
+          "unit": "mm",
+          "condition": "Permitted ± tolerance"
+        }
+      ],
+      "properties": [
+        {
+          "parameter": "Function",
+          "value": "Surrounds the head and provides helmet fitting",
+          "unit": "",
+          "condition": "Mandatory"
+        },
+        {
+          "parameter": "Adjustment",
+          "value": "Adjustable according to helmet size",
+          "unit": "",
+          "condition": "Mandatory"
+        }
+      ],
+      "application": [
+        "Secures helmet fit to the wearer's head"
+      ]
+    }
+  ],
+  "standards": [
+    {
+      "standard_id": "IS_2925_1984",
+      "authority": "Bureau of Indian Standards",
+      "number": "IS 2925:1984",
+      "title": "Specification for Industrial Safety Helmets",
+      "revision": "Second Revision",
+      "publication_date": "1984",
+      "status": "Active; Reaffirmed in 2020",
+      "scope": "Specifies material, construction, workmanship, finish and performance requirements for helmets intended to protect against falling objects and other hazards in mining, tunnelling, quarrying, ship building, construction projects and similar industrial occupations.",
+      "requirements": [
+        {
+          "parameter": "Shell material",
+          "operator": "=",
+          "value": "Non-metallic material conforming to performance test requirements",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Small headband range",
+          "operator": "between",
+          "value": "500-540",
+          "unit": "mm",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Medium headband range",
+          "operator": "between",
+          "value": "540-590",
+          "unit": "mm",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Large headband range",
+          "operator": "between",
+          "value": "590-640",
+          "unit": "mm",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Headband size tolerance",
+          "operator": "±",
+          "value": "10",
+          "unit": "mm",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Helmet mass",
+          "operator": "≤",
+          "value": "400",
+          "unit": "g",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Shock absorption transmitted force",
+          "operator": "≤",
+          "value": "5",
+          "unit": "kN",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Penetration/dent depth",
+          "operator": "≤",
+          "value": "10",
+          "unit": "mm",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Electrical leakage current",
+          "operator": "≤",
+          "value": "3",
+          "unit": "mA",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Water absorption",
+          "operator": "≤",
+          "value": "5",
+          "unit": "%",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Flame persistence after removal",
+          "operator": "≤",
+          "value": "5",
+          "unit": "seconds",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Heat resistance",
+          "operator": "=",
+          "value": "Shell shall not separate, distort or soften",
+          "unit": "",
+          "importance": "mandatory"
+        }
+      ],
+      "references": [
+        {
+          "standard_number": "IS 7692:1975",
+          "title": "Specification for wooden headform for testing of helmets",
+          "relationship": "Referenced for headform testing"
+        },
+        {
+          "standard_number": "IS 9695:1980",
+          "title": "Sampling and criteria for conformity",
+          "relationship": "Referenced for sampling and conformity"
+        }
+      ],
+      "amendments": [
+        {
+          "amendment_number": "1",
+          "amendment_date": "",
+          "description": ""
+        },
+        {
+          "amendment_number": "2",
+          "amendment_date": "September 1999",
+          "description": "Changes relating to helmet construction requirements."
+        },
+        {
+          "amendment_number": "3",
+          "amendment_date": "December 2000",
+          "description": "Updated helmet size requirements, marking terminology and flammability test provisions."
+        },
+        {
+          "amendment_number": "4",
+          "amendment_date": "",
+          "description": ""
+        },
+        {
+          "amendment_number": "5",
+          "amendment_date": "",
+          "description": ""
+        },
+        {
+          "amendment_number": "6",
+          "amendment_date": "",
+          "description": ""
+        },
+        {
+          "amendment_number": "7",
+          "amendment_date": "",
+          "description": ""
+        },
+        {
+          "amendment_number": "8",
+          "amendment_date": "",
+          "description": ""
+        }
+      ],
+      "sources": [
+        {
+          "source_name": "2925_1984_reff2020.pdf",
+          "source_type": "Indian Standard PDF",
+          "page_or_clause": "Clauses 1, 3-10 and appendices"
+        },
+        {
+          "source_name": "BIS Product Manual / Current BIS Standard Status Research",
+          "source_type": "official_reference",
+          "page_or_clause": "Certification, status and amendment metadata"
+        }
+      ]
+    }
+  ],
+  "tenders": [
+    {
+      "tender_id": "MSEDCL_MMD_T_HTM1_05_0824",
+      "tender_reference": "MMD/T-HTM1-05/0824",
+      "title": "Procurement of Helmet with High Voltage Detection Device",
+      "description": "Procurement of industrial safety helmets integrated/provided with a high voltage detection device.",
+      "buyer": {
+        "organization": "Maharashtra State Electricity Distribution Co. Ltd.",
+        "department": "Material Management Department"
+      },
+      "publication_date": "2024-08-09",
+      "location": "Mumbai, Maharashtra",
+      "requested_components": [
+        {
+          "component_id": "helmet_with_hvdd",
+          "type": "Industrial Safety Helmet",
+          "subtype": "With High Voltage Detection Device",
+          "quantity": 40000,
+          "unit": "No."
+        }
+      ],
+      "referenced_standards": [
+        {
+          "standard_number": "IS 2925:1984",
+          "requirement_context": "Helmet certification required as ISI / IS 2925:1984"
+        }
+      ],
+      "requirements": [
+        {
+          "parameter": "Colour",
+          "operator": "=",
+          "value": "Yellow",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Helmet material",
+          "operator": "=",
+          "value": "HDPE",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Helmet circumference range",
+          "operator": "between",
+          "value": "520-600",
+          "unit": "mm",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Helmet weight",
+          "operator": "≤",
+          "value": "385 + 2%",
+          "unit": "g",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Suspension",
+          "operator": "=",
+          "value": "Nylon suspension",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Harness material",
+          "operator": "=",
+          "value": "Nylon",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Harness adjustment",
+          "operator": "=",
+          "value": "Wheel ratchet must be provided",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Sweat band",
+          "operator": "=",
+          "value": "Must be provided",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Sweat band thickness",
+          "operator": "≥",
+          "value": "2",
+          "unit": "mm",
+          "importance": "Brushed cotton"
+        },
+        {
+          "parameter": "HVDD mounting provision",
+          "operator": "=",
+          "value": "Must be provided",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Chin strap",
+          "operator": "=",
+          "value": "Must be provided",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Chin strap material",
+          "operator": "=",
+          "value": "Nylon",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Rain water/water gutter provision",
+          "operator": "=",
+          "value": "Must be provided",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Warranty",
+          "operator": "=",
+          "value": "1",
+          "unit": "year",
+          "importance": "mandatory"
+        }
+      ],
+      "certification_requirements": [
+        "ISI certification / conformity to IS 2925:1984",
+        "Valid BIS licence, if applicable, requested in qualifying requirements"
+      ],
+      "source": {
+        "portal": "MSEDCL e-Tender",
+        "document_name": "FILE_MMD_T-HTM1-05_0824-_version_1_1723185051304.pdf"
+      }
+    },
+    {
+      "tender_id": "SER_UPL_75908451",
+      "tender_reference": "CR Req. No. 79511 dated 2020-02-10 / Item 75908451",
+      "title": "Industrial Safety Helmet with Detachable Miner's Light",
+      "description": "ISI marked industrial safety helmet conforming to IS 2925:1984, with detachable miner's light with flexible rotation, strap and rechargeable heavy-duty battery.",
+      "buyer": {
+        "organization": "Indian Railways",
+        "department": "Railway procurement listing / CR"
+      },
+      "publication_date": "2020-02-10",
+      "location": "",
+      "requested_components": [
+        {
+          "component_id": "industrial_safety_helmet_with_miners_light",
+          "type": "Industrial Safety Helmet",
+          "subtype": "With detachable miner's light",
+          "quantity": null,
+          "unit": ""
+        }
+      ],
+      "referenced_standards": [
+        {
+          "standard_number": "IS 2925:1984",
+          "requirement_context": "ISI marked safety helmet to IS 2925:1984 (modified in 2010 as stated in supplied procurement listing)"
+        }
+      ],
+      "requirements": [
+        {
+          "parameter": "Miner's light",
+          "operator": "=",
+          "value": "Detachable with flexible rotation",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Light strap",
+          "operator": "=",
+          "value": "Provided",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Battery",
+          "operator": "=",
+          "value": "Rechargeable heavy-duty battery",
+          "unit": "",
+          "importance": "mandatory"
+        }
+      ],
+      "certification_requirements": [
+        "ISI marked safety helmet"
+      ],
+      "source": {
+        "portal": "Indian Railways procurement / UPL listing",
+        "document_name": "1672653372168-UPL.pdf"
+      }
+    },
+    {
+      "tender_id": "WR_PO_61225895201069",
+      "tender_reference": "WR/61225895201069 dated 2022-07-26",
+      "title": "Industrial Safety Helmet Procurement",
+      "description": "Industrial safety helmet confirming to IS 2925 latest version and GeM specification, size range 540-590 mm.",
+      "buyer": {
+        "organization": "Western Railway",
+        "department": "SE-DIE DHD"
+      },
+      "publication_date": "2022-07-26",
+      "location": "",
+      "requested_components": [
+        {
+          "component_id": "industrial_safety_helmet",
+          "type": "Industrial Safety Helmet",
+          "subtype": "Standard",
+          "quantity": 2178,
+          "unit": "Nos."
+        }
+      ],
+      "referenced_standards": [
+        {
+          "standard_number": "IS 2925",
+          "requirement_context": "Latest version required"
+        }
+      ],
+      "requirements": [
+        {
+          "parameter": "Size range",
+          "operator": "between",
+          "value": "540-590",
+          "unit": "mm",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Performance test certificate",
+          "operator": "=",
+          "value": "Firm shall provide performance test certificate",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "GeM product ID",
+          "operator": "=",
+          "value": "5116877-63395441861",
+          "unit": "",
+          "importance": "mandatory"
+        }
+      ],
+      "certification_requirements": [
+        "Conformance to IS 2925 latest version"
+      ],
+      "source": {
+        "portal": "Indian Railways E-Procurement System",
+        "document_name": "1664773180896-qtr2-2022.pdf"
+      }
+    },
+    {
+      "tender_id": "BHEL_MM_SDC_EOI_08_09_03",
+      "tender_reference": "MM/SDC/EOI/08-09/03",
+      "title": "Expression of Interest for Supply of Safety Items - Industrial Safety Helmet",
+      "description": "Industrial safety helmet procurement for BHEL Central Foundry Forge Plant, Haridwar.",
+      "buyer": {
+        "organization": "Bharat Heavy Electricals Limited",
+        "department": "Materials Management / Industrial Safety Department, CFFP"
+      },
+      "publication_date": "2008-03-07",
+      "location": "Ranipur, Haridwar, Uttarakhand",
+      "requested_components": [
+        {
+          "component_id": "industrial_safety_helmet",
+          "type": "Industrial Safety Helmet",
+          "subtype": "Standard",
+          "quantity": null,
+          "unit": ""
+        }
+      ],
+      "referenced_standards": [
+        {
+          "standard_number": "IS 2925:1984",
+          "requirement_context": "Helmet shall fulfil IS 2925:1984 requirements"
+        }
+      ],
+      "requirements": [
+        {
+          "parameter": "Material",
+          "operator": "=",
+          "value": "Tough, lightweight, high-impact, chemical-resistant polyethylene thermoplastic",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Design",
+          "operator": "=",
+          "value": "Ergonomically designed",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Head harness",
+          "operator": "=",
+          "value": "Adjustable",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Accessory clips",
+          "operator": "=",
+          "value": "Provision for attachment of additional protective accessories",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Nape strap adjustment range",
+          "operator": "between",
+          "value": "510-620",
+          "unit": "mm",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Colour",
+          "operator": "=",
+          "value": "Light green",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "BHEL logo",
+          "operator": "=",
+          "value": "Printed on front forehead of helmet",
+          "unit": "",
+          "importance": "mandatory"
+        },
+        {
+          "parameter": "Technical sample",
+          "operator": "=",
+          "value": "Required with offer",
+          "unit": "",
+          "importance": "mandatory"
+        }
+      ],
+      "certification_requirements": [
+        "Fulfil IS 2925:1984 requirements"
+      ],
+      "source": {
+        "portal": "BHEL tender document",
+        "document_name": "ten935_1.pdf"
+      }
+    },
+    {
+      "tender_id": "DTL_F_DTL_206_2018_19_Q01",
+      "tender_reference": "F.DTL/206/2018-19/M(T)O&M220/66kV/N-1/Q-01",
+      "title": "Supply of Safety Equipments at Rohini-II Substation",
+      "description": "Safety equipment procurement including safety helmets for Delhi Transco Limited.",
+      "buyer": {
+        "organization": "Delhi Transco Limited",
+        "department": "Dy. G.M. (T) North / O&M"
+      },
+      "publication_date": "2019-08-02",
+      "location": "Rohini-II Substation, Delhi",
+      "requested_components": [
+        {
+          "component_id": "safety_helmet",
+          "type": "Safety Helmet",
+          "subtype": "Standard",
+          "quantity": 20,
+          "unit": "EA"
+        }
+      ],
+      "referenced_standards": [],
+      "requirements": [],
+      "certification_requirements": [],
+      "source": {
+        "portal": "Delhi Transco Limited tender notification",
+        "document_name": "DTL-6815-020819.pdf"
+      }
+    }
+  ],
+  "compliance": {
+    "bis_certification_required": true,
+    "certification_scheme": "Scheme-I (ISI Mark Scheme)",
+    "standard_mark_required": true,
+    "qco_applicable": true,
+    "qco_name": "Helmet for Police Force, Civil Defence and Personal Protection (Quality Control) Order, 2023",
+    "qco_notification": "S.O. 4649(E), dated 23 October 2023",
+    "certification_authority": "Bureau of Indian Standards",
+    "applicable_standard": "IS 2925:1984",
+    "certification_notes": "Industrial Safety Helmets conforming to IS 2925:1984 are listed under compulsory BIS certification through Scheme-I."
+  }
+}

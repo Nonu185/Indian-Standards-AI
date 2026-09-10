@@ -1,7 +1,6 @@
 const { Mistral } = require('@mistralai/mistralai');
 
 const apiKey = process.env.MISTRAL_API_KEY;
-// Initialize the client if the API key is present
 const client = apiKey ? new Mistral({ apiKey }) : null;
 
 /**
@@ -32,7 +31,6 @@ Message: "${message}"`;
     });
 
     let title = chatResponse.choices[0].message.content.trim();
-    // Clean up any surrounding quotes or newlines Mistral might have included
     title = title.replace(/^["']|["']$/g, '').trim();
 
     return title;

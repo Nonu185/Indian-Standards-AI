@@ -1,0 +1,1142 @@
+{
+  "product": {
+    "product_id": "ordinary_portland_cement",
+    "product_name": "Ordinary Portland Cement",
+    "product_category": "Hydraulic Cement",
+    "product_description": "A fine powdered hydraulic cement manufactured by burning calcareous and argillaceous and/or other silica, alumina or iron oxide-bearing materials at clinkering temperature and grinding the resultant clinker. It is used in general construction work including building construction, concrete pavements, flooring and plastering.",
+    "synonyms": [
+      "OPC",
+      "Ordinary Portland Cement",
+      "OPC Cement"
+    ]
+  },
+  "components": [
+    {
+      "component_id": "portland_cement_clinker",
+      "type": "Primary cement constituent",
+      "subtype": "Clinker",
+      "material": [
+        "Calcareous materials",
+        "Argillaceous materials",
+        "Silica-bearing materials",
+        "Alumina-bearing materials",
+        "Iron oxide-bearing materials"
+      ],
+      "dimensions": [],
+      "tolerances": [],
+      "properties": [
+        {
+          "parameter": "Manufacturing process",
+          "value": "Materials are intimately mixed, burned at clinkering temperature and the resultant clinker is ground to produce cement conforming to the specification",
+          "unit": "",
+          "condition": "IS 269:2015 manufacturing requirement"
+        }
+      ],
+      "application": [
+        "Primary constituent for manufacture of Ordinary Portland Cement"
+      ]
+    },
+    {
+      "component_id": "gypsum",
+      "type": "Permitted manufacturing constituent",
+      "subtype": "Natural, mineral or chemical gypsum",
+      "material": [
+        "Natural gypsum",
+        "Mineral gypsum",
+        "Chemical gypsum"
+      ],
+      "dimensions": [],
+      "tolerances": [],
+      "properties": [
+        {
+          "parameter": "Addition stage",
+          "value": "May be added after burning during manufacture",
+          "unit": "",
+          "condition": "Chemical gypsum is permitted provided final product performance requirements are met"
+        }
+      ],
+      "application": [
+        "Permitted constituent during manufacture and grinding of Ordinary Portland Cement"
+      ]
+    },
+    {
+      "component_id": "performance_improvers",
+      "type": "Performance improver",
+      "subtype": "Permitted grinding-stage or interblended additive",
+      "material": [
+        "Fly ash",
+        "Granulated slag",
+        "Silica fume",
+        "Limestone",
+        "Rice husk ash",
+        "Metakaolin",
+        "Copper slag",
+        "Steel slag",
+        "Lead-zinc slag",
+        "Spent fluidized catalytic cracking equilibrium catalyst",
+        "Ground granulated blast furnace slag"
+      ],
+      "dimensions": [],
+      "tolerances": [],
+      "properties": [
+        {
+          "parameter": "Maximum addition of each listed performance improver",
+          "value": "5",
+          "unit": "% by mass",
+          "condition": "As specified in Table 1 of IS 269:2015"
+        },
+        {
+          "parameter": "Maximum total addition when a combination of performance improvers is used",
+          "value": "5",
+          "unit": "% by mass",
+          "condition": "Inclusive of the 1 percent additives used while manufacturing"
+        }
+      ],
+      "application": [
+        "Enhancement of cement properties during manufacture"
+      ]
+    },
+    {
+      "component_id": "permitted_manufacturing_additives",
+      "type": "Permitted manufacturing additive",
+      "subtype": "Air-entraining agents, other agents and colouring agents",
+      "material": [
+        "Water",
+        "Air-entraining agents",
+        "Other non-harmful agents",
+        "Colouring agents"
+      ],
+      "dimensions": [],
+      "tolerances": [
+        {
+          "parameter": "Total permitted air-entraining agents or other agents including colouring agents",
+          "value": "1.0",
+          "unit": "% by mass",
+          "condition": "Agents must have proved not to be harmful"
+        }
+      ],
+      "properties": [],
+      "application": [
+        "Permitted additions during manufacture subject to IS 269:2015 limits"
+      ]
+    }
+  ],
+  "standards": [
+    {
+      "standard_id": "is_269_2015",
+      "authority": "Bureau of Indian Standards",
+      "number": "IS 269:2015",
+      "title": "Ordinary Portland Cement — Specification",
+      "revision": "Sixth Revision",
+      "publication_date": "2015",
+      "status": "Reaffirmed 2020 (as indicated by supplied IS 269 source file)",
+      "scope": "Specifies manufacture, chemical requirements, physical requirements, storage, manufacturer's certificate, packing, marking, sampling, testing and rejection requirements for Ordinary Portland Cement in grades OPC 33, OPC 43, OPC 43S, OPC 53 and OPC 53S.",
+      "requirements": [
+        {
+          "parameter": "OPC grades",
+          "operator": "allowed values",
+          "value": "OPC 33, OPC 43, OPC 43S, OPC 53, OPC 53S",
+          "unit": "",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Performance improver addition",
+          "operator": "<=",
+          "value": "5",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Combined performance improver addition",
+          "operator": "<=",
+          "value": "5",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Fineness — OPC 33",
+          "operator": ">=",
+          "value": "225",
+          "unit": "m²/kg",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Fineness — OPC 43",
+          "operator": ">=",
+          "value": "225",
+          "unit": "m²/kg",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Fineness — OPC 43S",
+          "operator": ">=",
+          "value": "370",
+          "unit": "m²/kg",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Fineness — OPC 53",
+          "operator": ">=",
+          "value": "225",
+          "unit": "m²/kg",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Fineness — OPC 53S",
+          "operator": ">=",
+          "value": "370",
+          "unit": "m²/kg",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Soundness by Le-Chatelier method — OPC 33/43/53",
+          "operator": "<=",
+          "value": "10",
+          "unit": "mm",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Soundness by Le-Chatelier method — OPC 43S/53S",
+          "operator": "<=",
+          "value": "5",
+          "unit": "mm",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Soundness by autoclave test",
+          "operator": "<=",
+          "value": "0.8",
+          "unit": "%",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Initial setting time — OPC 33/43/53",
+          "operator": ">=",
+          "value": "30",
+          "unit": "min",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Initial setting time — OPC 43S/53S",
+          "operator": ">=",
+          "value": "120",
+          "unit": "min",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Final setting time",
+          "operator": "<=",
+          "value": "600",
+          "unit": "min",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 72 ± 1 h — OPC 33",
+          "operator": ">=",
+          "value": "16",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 72 ± 1 h — OPC 43/43S",
+          "operator": ">=",
+          "value": "23",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 72 ± 1 h — OPC 53/53S",
+          "operator": ">=",
+          "value": "27",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 168 ± 2 h — OPC 33",
+          "operator": ">=",
+          "value": "22",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 168 ± 2 h — OPC 43",
+          "operator": ">=",
+          "value": "33",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 168 ± 2 h — OPC 43S",
+          "operator": ">=",
+          "value": "37.5",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 168 ± 2 h — OPC 53",
+          "operator": ">=",
+          "value": "37",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 168 ± 2 h — OPC 53S",
+          "operator": ">=",
+          "value": "37.5",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 672 ± 4 h — OPC 33",
+          "operator": ">=",
+          "value": "33",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 672 ± 4 h — OPC 43/43S",
+          "operator": ">=",
+          "value": "43",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Compressive strength at 672 ± 4 h — OPC 53/53S",
+          "operator": ">=",
+          "value": "53",
+          "unit": "MPa",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Progressive strength development",
+          "operator": "must increase",
+          "value": "Progressive increase from strength at 72 h",
+          "unit": "",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Lime ratio — OPC 33/43",
+          "operator": "between",
+          "value": "0.66 to 1.02",
+          "unit": "",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Lime ratio — OPC 43S/53/53S",
+          "operator": "between",
+          "value": "0.80 to 1.02",
+          "unit": "",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Alumina to iron oxide ratio",
+          "operator": ">=",
+          "value": "0.66",
+          "unit": "",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Insoluble residue — OPC 33/43/53",
+          "operator": "<=",
+          "value": "5.0",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Insoluble residue — OPC 43S/53S",
+          "operator": "<=",
+          "value": "2.0",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Magnesia — OPC 33/43/53",
+          "operator": "<=",
+          "value": "6.0",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Magnesia — OPC 43S/53S",
+          "operator": "<=",
+          "value": "5.0",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "SO₃ — OPC 33/43/53",
+          "operator": "<=",
+          "value": "3.5",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "SO₃ — OPC 43S/53S",
+          "operator": "<=",
+          "value": "3.3",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Loss on ignition — OPC 33/43",
+          "operator": "<=",
+          "value": "5.0",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Loss on ignition — OPC 43S/53/53S",
+          "operator": "<=",
+          "value": "4.0",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Chloride content — general use",
+          "operator": "<=",
+          "value": "0.1",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Chloride content — prestressed structures",
+          "operator": "<=",
+          "value": "0.05",
+          "unit": "% by mass",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Alkali content for reactive aggregate use",
+          "operator": "<",
+          "value": "0.6",
+          "unit": "% expressed as Na₂O equivalent",
+          "importance": "Recommended"
+        },
+        {
+          "parameter": "Packing — standard bag quantity",
+          "operator": "=",
+          "value": "50",
+          "unit": "kg",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Optional smaller bag quantities",
+          "operator": "allowed values",
+          "value": "25, 10, 5, 2 or 1",
+          "unit": "kg",
+          "importance": "Conditional"
+        },
+        {
+          "parameter": "Retesting of bulk cement before use",
+          "operator": "required after",
+          "value": "6",
+          "unit": "months in bulk storage before shipment",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Retesting of bagged cement before use",
+          "operator": "required after",
+          "value": "3",
+          "unit": "months after completion of tests in local storage",
+          "importance": "Mandatory"
+        }
+      ],
+      "references": [
+        {
+          "standard_number": "IS 4032:1985",
+          "title": "Method of Chemical Analysis of Hydraulic Cement",
+          "relationship": "Chemical requirements and chemical analysis"
+        },
+        {
+          "standard_number": "IS 4031 (Part 2):1999",
+          "title": "Methods of Physical Tests for Hydraulic Cement — Determination of Fineness by Blaine Air Permeability Method",
+          "relationship": "Method for fineness testing"
+        },
+        {
+          "standard_number": "IS 4031 (Part 3):1988",
+          "title": "Methods of Physical Tests for Hydraulic Cement — Determination of Soundness",
+          "relationship": "Method for soundness testing"
+        },
+        {
+          "standard_number": "IS 4031 (Part 5):1988",
+          "title": "Methods of Physical Tests for Hydraulic Cement — Determination of Initial and Final Setting Times",
+          "relationship": "Method for setting time testing"
+        },
+        {
+          "standard_number": "IS 4031 (Part 6):1988",
+          "title": "Methods of Physical Tests for Hydraulic Cement — Determination of Compressive Strength of Hydraulic Cement Other Than Masonry Cement",
+          "relationship": "Method for compressive strength testing"
+        },
+        {
+          "standard_number": "IS 3535:1986",
+          "title": "Methods of Sampling Hydraulic Cements",
+          "relationship": "Sampling method"
+        },
+        {
+          "standard_number": "IS 3812 (Part 1)",
+          "title": "Specification reference for fly ash used as performance improver",
+          "relationship": "Performance improver conformity"
+        },
+        {
+          "standard_number": "IS 12089",
+          "title": "Specification reference for granulated slag used as performance improver",
+          "relationship": "Performance improver conformity"
+        },
+        {
+          "standard_number": "IS 15388",
+          "title": "Specification reference for silica fume used as performance improver",
+          "relationship": "Performance improver conformity"
+        },
+        {
+          "standard_number": "IS 16354",
+          "title": "Specification reference for metakaolin used as performance improver",
+          "relationship": "Performance improver conformity"
+        },
+        {
+          "standard_number": "IS 16714",
+          "title": "Specification reference for ground granulated blast furnace slag used as performance improver",
+          "relationship": "Performance improver conformity"
+        }
+      ],
+      "amendments": [
+        {
+          "amendment_number": "Amendment No. 1",
+          "amendment_date": "",
+          "description": "The supplied Product Manual PM/IS 269/3/Oct 2023 states that IS 269:2015 has one amendment; amendment text/date was not separately available in the supplied files."
+        }
+      ],
+      "sources": [
+        {
+          "source_name": "269_2015_reff2020.pdf",
+          "source_type": "Indian Standard specification",
+          "page_or_clause": "IS 269:2015"
+        },
+        {
+          "source_name": "COMPENDIUM-OF-CEMENT-STANDARDS.pdf",
+          "source_type": "BIS cement standards compendium",
+          "page_or_clause": "Ordinary Portland Cement section, pages 5-11 of supplied PDF"
+        },
+        {
+          "source_name": "IS-269_0_0_2015_1_TRep.xlsx",
+          "source_type": "BIS test report template",
+          "page_or_clause": "Clauses 5 to 14"
+        },
+        {
+          "source_name": "PM_IS_269-Oct-2023.pdf",
+          "source_type": "BIS product manual",
+          "page_or_clause": "Product scope and certification/testing guidance"
+        }
+      ]
+    },
+    {
+      "standard_id": "is_4032_1985",
+      "authority": "Bureau of Indian Standards",
+      "number": "IS 4032:1985",
+      "title": "Method of Chemical Analysis of Hydraulic Cement",
+      "revision": "First Revision",
+      "publication_date": "1985",
+      "status": "Reaffirmed 2005 (as shown in supplied PDF)",
+      "scope": "Provides methods for chemical analysis of hydraulic cement and is referenced for determining chemical conformity requirements of Ordinary Portland Cement.",
+      "requirements": [
+        {
+          "parameter": "Chemical analysis",
+          "operator": "must be performed according to",
+          "value": "IS 4032 method",
+          "unit": "",
+          "importance": "Mandatory when verifying chemical requirements under IS 269"
+        },
+        {
+          "parameter": "Chemical characteristics covered for OPC conformity",
+          "operator": "includes",
+          "value": "Lime ratio, alumina/iron oxide ratio, insoluble residue, magnesia, sulphur trioxide, loss on ignition, chloride and related chemical constituents",
+          "unit": "",
+          "importance": "Mandatory test method reference"
+        }
+      ],
+      "references": [],
+      "amendments": [
+        {
+          "amendment_number": "Amendment No. 1",
+          "amendment_date": "",
+          "description": "Incorporated in the supplied edition; amendment details were not separately extracted."
+        }
+      ],
+      "sources": [
+        {
+          "source_name": "4032.pdf",
+          "source_type": "Indian Standard test method",
+          "page_or_clause": "IS 4032:1985"
+        }
+      ]
+    },
+    {
+      "standard_id": "is_4031_part_2_1999",
+      "authority": "Bureau of Indian Standards",
+      "number": "IS 4031 (Part 2):1999",
+      "title": "Methods of Physical Tests for Hydraulic Cement — Part 2: Determination of Fineness by Blaine Air Permeability Method",
+      "revision": "Second Revision",
+      "publication_date": "1999",
+      "status": "Status not independently verified from supplied files",
+      "scope": "Covers determination of fineness of cement using the Blaine air permeability apparatus, with fineness represented by specific surface expressed as total surface area.",
+      "requirements": [
+        {
+          "parameter": "Fineness test method",
+          "operator": "must use",
+          "value": "Blaine air permeability method",
+          "unit": "",
+          "importance": "Mandatory test method"
+        },
+        {
+          "parameter": "Timer readability",
+          "operator": ">=",
+          "value": "nearest 0.2",
+          "unit": "s",
+          "importance": "Test equipment requirement"
+        },
+        {
+          "parameter": "Timer accuracy",
+          "operator": "<=",
+          "value": "1",
+          "unit": "% over time intervals up to 300 s",
+          "importance": "Test equipment requirement"
+        }
+      ],
+      "references": [
+        {
+          "standard_number": "IS 3535",
+          "title": "Methods of Sampling Hydraulic Cements",
+          "relationship": "Sampling of test specimen"
+        },
+        {
+          "standard_number": "IS 5516",
+          "title": "Specification for variable flow type air permeability apparatus (Blaine type)",
+          "relationship": "Testing apparatus specification"
+        }
+      ],
+      "amendments": [],
+      "sources": [
+        {
+          "source_name": "4031_2.pdf",
+          "source_type": "Indian Standard test method",
+          "page_or_clause": "Clauses 1 to 4"
+        }
+      ]
+    },
+    {
+      "standard_id": "is_4031_part_3_1988",
+      "authority": "Bureau of Indian Standards",
+      "number": "IS 4031 (Part 3):1988",
+      "title": "Methods of Physical Tests for Hydraulic Cement — Part 3: Determination of Soundness",
+      "revision": "First Revision",
+      "publication_date": "1988",
+      "status": "Reaffirmed 2019 (as shown in supplied PDF)",
+      "scope": "Covers procedures for determining soundness of cement by the Le-Chatelier method and autoclave test.",
+      "requirements": [
+        {
+          "parameter": "Soundness test methods",
+          "operator": "must use",
+          "value": "Le-Chatelier method and/or autoclave test as applicable",
+          "unit": "",
+          "importance": "Mandatory test method"
+        },
+        {
+          "parameter": "Laboratory temperature",
+          "operator": "between",
+          "value": "25 to 29",
+          "unit": "°C",
+          "importance": "Test condition"
+        },
+        {
+          "parameter": "Laboratory relative humidity",
+          "operator": "between",
+          "value": "60 to 70",
+          "unit": "%",
+          "importance": "Test condition"
+        }
+      ],
+      "references": [
+        {
+          "standard_number": "IS 3535:1986",
+          "title": "Methods of Sampling Hydraulic Cements",
+          "relationship": "Sampling of test specimen"
+        }
+      ],
+      "amendments": [
+        {
+          "amendment_number": "Amendment No. 1",
+          "amendment_date": "1993-03",
+          "description": "Amended testing equipment requirement for water bath and related provisions as incorporated in supplied PDF."
+        }
+      ],
+      "sources": [
+        {
+          "source_name": "4031_3.pdf",
+          "source_type": "Indian Standard test method",
+          "page_or_clause": "Clauses 1 to 5 and Amendment No. 1"
+        }
+      ]
+    },
+    {
+      "standard_id": "is_4031_part_5_1988",
+      "authority": "Bureau of Indian Standards",
+      "number": "IS 4031 (Part 5):1988",
+      "title": "Methods of Physical Tests for Hydraulic Cement — Part 5: Determination of Initial and Final Setting Times",
+      "revision": "First Revision",
+      "publication_date": "1988",
+      "status": "Reaffirmed 2014 (as shown in supplied PDF)",
+      "scope": "Covers the procedure for determining the initial and final setting times of cement.",
+      "requirements": [
+        {
+          "parameter": "Laboratory temperature",
+          "operator": "between",
+          "value": "25 to 29",
+          "unit": "°C",
+          "importance": "Test condition"
+        },
+        {
+          "parameter": "Laboratory relative humidity",
+          "operator": "between",
+          "value": "60 to 70",
+          "unit": "%",
+          "importance": "Test condition"
+        },
+        {
+          "parameter": "Moist closet temperature",
+          "operator": "between",
+          "value": "25 to 29",
+          "unit": "°C",
+          "importance": "Test condition"
+        },
+        {
+          "parameter": "Moist closet relative humidity",
+          "operator": ">=",
+          "value": "90",
+          "unit": "%",
+          "importance": "Test condition"
+        },
+        {
+          "parameter": "Vicat apparatus",
+          "operator": "must conform to",
+          "value": "IS 5513:1976",
+          "unit": "",
+          "importance": "Test equipment requirement"
+        }
+      ],
+      "references": [
+        {
+          "standard_number": "IS 3535:1986",
+          "title": "Methods of Sampling Hydraulic Cements",
+          "relationship": "Sampling of test specimen"
+        },
+        {
+          "standard_number": "IS 5513:1976",
+          "title": "Specification for Vicat apparatus",
+          "relationship": "Testing apparatus specification"
+        }
+      ],
+      "amendments": [
+        {
+          "amendment_number": "Amendment No. 1",
+          "amendment_date": "1993-03",
+          "description": "Incorporated in Edition 2.1 of the supplied PDF."
+        }
+      ],
+      "sources": [
+        {
+          "source_name": "4031_5.pdf",
+          "source_type": "Indian Standard test method",
+          "page_or_clause": "Clauses 1 to 4"
+        }
+      ]
+    },
+    {
+      "standard_id": "is_4031_part_6_1988",
+      "authority": "Bureau of Indian Standards",
+      "number": "IS 4031 (Part 6):1988",
+      "title": "Methods of Physical Tests for Hydraulic Cement — Part 6: Determination of Compressive Strength of Hydraulic Cement Other Than Masonry Cement",
+      "revision": "First Revision",
+      "publication_date": "1988",
+      "status": "Reaffirmed 2005 (as shown in supplied PDF)",
+      "scope": "Covers determination of cement strength as represented by compressive strength tests on mortar cubes compacted using a standard vibration machine.",
+      "requirements": [
+        {
+          "parameter": "Strength test specimen",
+          "operator": "must use",
+          "value": "Mortar cubes compacted by standard vibration machine",
+          "unit": "",
+          "importance": "Mandatory test method"
+        },
+        {
+          "parameter": "Laboratory temperature",
+          "operator": "between",
+          "value": "25 to 29",
+          "unit": "°C",
+          "importance": "Test condition"
+        },
+        {
+          "parameter": "Laboratory relative humidity",
+          "operator": "between",
+          "value": "60 to 70",
+          "unit": "%",
+          "importance": "Test condition"
+        }
+      ],
+      "references": [
+        {
+          "standard_number": "IS 3535:1986",
+          "title": "Methods of Sampling Hydraulic Cements",
+          "relationship": "Sampling of test specimen"
+        }
+      ],
+      "amendments": [
+        {
+          "amendment_number": "Amendment No. 1",
+          "amendment_date": "1993-03",
+          "description": "Substitution relating to gauging trowel requirement."
+        },
+        {
+          "amendment_number": "Amendment No. 2",
+          "amendment_date": "2002-03",
+          "description": "Revision to a curing/test time requirement from 24 hours to 24 ± 1 hours."
+        },
+        {
+          "amendment_number": "Amendment No. 3",
+          "amendment_date": "2003-02",
+          "description": "Correction in clause 6.1.2 wording as incorporated in supplied PDF."
+        }
+      ],
+      "sources": [
+        {
+          "source_name": "4031_6.pdf",
+          "source_type": "Indian Standard test method",
+          "page_or_clause": "Clauses 1 to 3 and Amendments No. 1 to 3"
+        }
+      ]
+    },
+    {
+      "standard_id": "is_3535_1986",
+      "authority": "Bureau of Indian Standards",
+      "number": "IS 3535:1986",
+      "title": "Methods of Sampling Hydraulic Cements",
+      "revision": "First Revision",
+      "publication_date": "1986",
+      "status": "Reaffirmed 2013 (as shown in supplied PDF)",
+      "scope": "Prescribes methods for sampling and criteria for conformity of hydraulic cements from bags, bulk storage, ship's hold, wagons and conveyors, and gives broad outlines for manufacturing process controls.",
+      "requirements": [
+        {
+          "parameter": "Lot size",
+          "operator": "<=",
+          "value": "2000",
+          "unit": "tonnes",
+          "importance": "Sampling definition"
+        },
+        {
+          "parameter": "Sampling sources",
+          "operator": "includes",
+          "value": "Bags, bulk storage silos, ship's hold, wagons and conveyors",
+          "unit": "",
+          "importance": "Mandatory sampling applicability"
+        },
+        {
+          "parameter": "Representative sample",
+          "operator": "must be",
+          "value": "Prepared from prescribed increments and sampling procedure",
+          "unit": "",
+          "importance": "Mandatory"
+        }
+      ],
+      "references": [],
+      "amendments": [],
+      "sources": [
+        {
+          "source_name": "3535.pdf",
+          "source_type": "Indian Standard sampling method",
+          "page_or_clause": "Clauses 1 to 3"
+        }
+      ]
+    }
+  ],
+  "compliance": {
+    "bis_certification_required": true,
+    "certification_scheme": "Scheme-I (ISI Mark Scheme)",
+    "standard_mark_required": true,
+    "qco_applicable": true,
+    "qco_name": "Cement (Quality Control) Order, 2003",
+    "qco_notification": "S.O. No. 191(E), dated 17 February 2003",
+    "certification_authority": "Bureau of Indian Standards",
+    "applicable_standard": "IS 269:2015",
+    "certification_notes": "Ordinary Portland Cement is listed by BIS under compulsory certification for cement products. Certification is operated under Scheme-I of the BIS Conformity Assessment Regulations. Products covered by IS 269 must comply with the applicable Indian Standard and certification requirements for use of the BIS Standard Mark."
+  },
+  "tenders": [
+    {
+      "tender_id": "tender_2020_bro_540049_1",
+      "tender_reference": "30012/19TF/DTK/ENQ-14/E3ES DT 16 JUN 2020",
+      "title": "Invitation of Quotation for Supply of Ordinary Portland Cement 43 Grade Original for Eastern Axis",
+      "description": "Open supply tender for Ordinary Portland Cement, 43 Grade, for the Eastern Axis.",
+      "buyer": {
+        "organization": "Border Roads Organisation",
+        "department": "Border Roads Orgn. - HQ CE (P) Dantak (Thimpu)"
+      },
+      "publication_date": "2020-06-16",
+      "location": "DETT A 504 SSTC, Samdrup Jongkhar",
+      "requested_components": [
+        {
+          "component_id": "opc_43",
+          "type": "Ordinary Portland Cement",
+          "subtype": "43 Grade",
+          "quantity": null,
+          "unit": ""
+        }
+      ],
+      "referenced_standards": [],
+      "requirements": [
+        {
+          "parameter": "Cement grade",
+          "operator": "=",
+          "value": "43 Grade",
+          "unit": "",
+          "importance": "Mandatory"
+        }
+      ],
+      "certification_requirements": [],
+      "source": {
+        "portal": "ePublishing System, Government of India",
+        "document_name": "ePublishing System, Government of India2.pdf"
+      }
+    },
+    {
+      "tender_id": "tender_2025_bhel_804670_1",
+      "tender_reference": "GEM/2025/B/6414351",
+      "title": "Supply of 3100 MT Ordinary Portland Cement (Grade-43) as per IS 269-2015 at NTPC Lara Stage-II (2x800 MW)",
+      "description": "Supply of 3100 MT of Ordinary Portland Cement, Grade 43, conforming to IS 269:2015 for NTPC Lara Stage-II at Raigarh, Chhattisgarh.",
+      "buyer": {
+        "organization": "Bharat Heavy Electricals Limited",
+        "department": "BHEL Power Sector Eastern Regions, Kolkata"
+      },
+      "publication_date": "2025-07-09",
+      "location": "NTPC Lara Stage-II (2x800 MW), Raigarh, Chhattisgarh",
+      "requested_components": [
+        {
+          "component_id": "opc_43",
+          "type": "Ordinary Portland Cement",
+          "subtype": "43 Grade",
+          "quantity": 3100,
+          "unit": "MT"
+        }
+      ],
+      "referenced_standards": [
+        {
+          "standard_number": "IS 269:2015",
+          "requirement_context": "OPC Grade 43 supply required to conform to IS 269:2015"
+        }
+      ],
+      "requirements": [
+        {
+          "parameter": "Cement grade",
+          "operator": "=",
+          "value": "43",
+          "unit": "Grade",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Quantity",
+          "operator": "=",
+          "value": "3100",
+          "unit": "MT",
+          "importance": "Mandatory"
+        }
+      ],
+      "certification_requirements": [],
+      "source": {
+        "portal": "ePublishing System, Government of India",
+        "document_name": "ePublishing System, Government of India.pdf"
+      }
+    },
+    {
+      "tender_id": "tender_2025_bhel_803932_1",
+      "tender_reference": "GEM/2025/B/6410169",
+      "title": "Supply of 1000 MT Ordinary Portland Cement (Grade-43) as per IS 269-2015 at 3x660 MW North Karanpura STPP FGD Project",
+      "description": "Supply of 1000 MT of Ordinary Portland Cement, Grade 43, conforming to IS 269:2015 for the North Karanpura STPP FGD Project, Jharkhand.",
+      "buyer": {
+        "organization": "Bharat Heavy Electricals Limited",
+        "department": "BHEL Power Sector Eastern Regions, Kolkata"
+      },
+      "publication_date": "2025-07-03",
+      "location": "3x660 MW North Karanpura STPP FGD Project, Jharkhand",
+      "requested_components": [
+        {
+          "component_id": "opc_43",
+          "type": "Ordinary Portland Cement",
+          "subtype": "43 Grade",
+          "quantity": 1000,
+          "unit": "MT"
+        }
+      ],
+      "referenced_standards": [
+        {
+          "standard_number": "IS 269:2015",
+          "requirement_context": "OPC Grade 43 supply required to conform to IS 269:2015"
+        }
+      ],
+      "requirements": [
+        {
+          "parameter": "Cement grade",
+          "operator": "=",
+          "value": "43",
+          "unit": "Grade",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Quantity",
+          "operator": "=",
+          "value": "1000",
+          "unit": "MT",
+          "importance": "Mandatory"
+        }
+      ],
+      "certification_requirements": [],
+      "source": {
+        "portal": "ePublishing System, Government of India",
+        "document_name": "ePublishing System, Government of India 1.pdf"
+      }
+    },
+    {
+      "tender_id": "tender_2025_bhel_802286_1",
+      "tender_reference": "PSER-PUR-PMX-461(III)-019",
+      "title": "Supply of 1600 MT Ordinary Portland Cement (Grade-43) as per IS 269-2015 at 1x800 MW Sipat Super Thermal Power Project, Stage-III",
+      "description": "Supply of 1600 MT of Ordinary Portland Cement, Grade 43, conforming to IS 269:2015 for Sipat Super Thermal Power Project, Stage-III, Bilaspur, Chhattisgarh.",
+      "buyer": {
+        "organization": "Bharat Heavy Electricals Limited",
+        "department": "BHEL Power Sector Eastern Regions, Kolkata"
+      },
+      "publication_date": "2025-06-19",
+      "location": "Sipat Super Thermal Power Project, Stage-III, Bilaspur, Chhattisgarh",
+      "requested_components": [
+        {
+          "component_id": "opc_43",
+          "type": "Ordinary Portland Cement",
+          "subtype": "43 Grade",
+          "quantity": 1600,
+          "unit": "MT"
+        }
+      ],
+      "referenced_standards": [
+        {
+          "standard_number": "IS 269:2015",
+          "requirement_context": "OPC Grade 43 supply required to conform to IS 269:2015"
+        }
+      ],
+      "requirements": [
+        {
+          "parameter": "Cement grade",
+          "operator": "=",
+          "value": "43",
+          "unit": "Grade",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Quantity",
+          "operator": "=",
+          "value": "1600",
+          "unit": "MT",
+          "importance": "Mandatory"
+        }
+      ],
+      "certification_requirements": [],
+      "source": {
+        "portal": "ePublishing System, Government of India",
+        "document_name": "ePublishing System, Government of India3.pdf"
+      }
+    },
+    {
+      "tender_id": "gem_2024_b_4630707",
+      "tender_reference": "GEM/2024/B/4630707",
+      "title": "Procurement of Ordinary Portland Cement Grade 43 for NTPC Korba",
+      "description": "Procurement of 100000 bags of Ordinary Portland Cement, Grade 43, conforming to IS 269:2015, with 50 kg capacity per bag and delivery to NTPC Korba.",
+      "buyer": {
+        "organization": "NTPC Limited",
+        "department": "Ministry of Power"
+      },
+      "publication_date": "2024-02-23",
+      "location": "NTPC Korba, Jamnipali, District Korba, Chhattisgarh",
+      "requested_components": [
+        {
+          "component_id": "opc_43_50kg_bag",
+          "type": "Ordinary Portland Cement",
+          "subtype": "43 Grade, 50 kg packed bag",
+          "quantity": 100000,
+          "unit": "bags"
+        }
+      ],
+      "referenced_standards": [
+        {
+          "standard_number": "IS 269:2015",
+          "requirement_context": "Supply of 43 Grade Ordinary Portland Cement as per IS 269:2015"
+        },
+        {
+          "standard_number": "IS 11652",
+          "requirement_context": "HDPE/PP woven sacks conforming to IS 11652 specified as packing material"
+        }
+      ],
+      "requirements": [
+        {
+          "parameter": "Cement grade",
+          "operator": "=",
+          "value": "43",
+          "unit": "Grade",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Bag capacity",
+          "operator": "=",
+          "value": "50",
+          "unit": "kg",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Total quantity",
+          "operator": "=",
+          "value": "100000",
+          "unit": "bags",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Performance improver content",
+          "operator": "allowed values",
+          "value": "1, 2, 3, 4 or 5",
+          "unit": "%",
+          "importance": "Mandatory bid specification"
+        },
+        {
+          "parameter": "Packing material",
+          "operator": "must conform to",
+          "value": "HDPE/PP woven sacks",
+          "unit": "",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Total alkali content",
+          "operator": "<=",
+          "value": "1.20",
+          "unit": "%",
+          "importance": "Mandatory"
+        },
+        {
+          "parameter": "Test report age/strength reporting",
+          "operator": "must provide",
+          "value": "Latest 7-day and 28-day test report indicating compressive strength and total alkali content",
+          "unit": "",
+          "importance": "Mandatory for technical acceptance"
+        }
+      ],
+      "certification_requirements": [
+        "Latest 7-day and 28-day manufacturer test certificates/reports for technical acceptance",
+        "Random third-party laboratory testing may be conducted by NTPC and results are binding"
+      ],
+      "source": {
+        "portal": "Government e-Marketplace (GeM)",
+        "document_name": "tender6.pdf"
+      }
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import ChatArea from '../components/chat/ChatArea';
 import MessageInput from '../components/chat/MessageInput';
 import { getChats, createChat, deleteChat } from '../services/chatService';
 import { getMessages, sendMessage } from '../services/messageService';
+import { getRecommendations } from '../services/recommendationService';
 
 function ChatPage() {
   const navigate = useNavigate();
@@ -118,14 +119,32 @@ function ChatPage() {
     setError(null);
 
     try {
-      const data = await sendMessage(chatId, content);
+      // Step 1: Call FastAPI AI service first
+      let aiResult = null;
+      try {
+        const aiData = await getRecommendations(content);
+        if (aiData?.success) {
+          const recCount = aiData.recommendations?.length ?? 0;
+          aiResult = {
+            summary:
+              recCount > 0
+                ? `Found ${recCount} applicable Indian Standard${recCount !== 1 ? 's' : ''} for your requirement.`
+                : 'No matching standards were found for this requirement.',
+            recommendations: aiData.recommendations ?? [],
+            extractedRequirements: aiData.extracted_requirements ?? null,
+          };
+        }
+      } catch {
+        // AI service unavailable — proceed without recommendations
+      }
+
+      // Step 2: Persist user message + AI result together in one request
+      const data = await sendMessage(chatId, content, aiResult);
+
+      // Replace optimistic user message; use the persisted assistant message
+      // (which now carries the recommendations array from MongoDB)
       setMessages((prev) => {
-        const filtered = prev.filter(
-          (m) =>
-            m.tempId !== tempUserMessage.tempId &&
-            m._id !== data.userMessage._id &&
-            m._id !== data.assistantMessage._id
-        );
+        const filtered = prev.filter((m) => m.tempId !== tempUserMessage.tempId);
         return [...filtered, data.userMessage, data.assistantMessage];
       });
 
@@ -133,7 +152,8 @@ function ChatPage() {
       setChats((prev) =>
         prev.map((c) => {
           if (c._id === chatId) {
-            const updatedTitle = data.chat?.title || (c.title === 'New Chat' ? content.slice(0, 50) : c.title);
+            const updatedTitle =
+              data.chat?.title || (c.title === 'New Chat' ? content.slice(0, 50) : c.title);
             return { ...c, title: updatedTitle, updatedAt: new Date().toISOString() };
           }
           return c;
@@ -142,7 +162,7 @@ function ChatPage() {
     } catch {
       // Remove optimistic message on failure
       setMessages((prev) => prev.filter((m) => m.tempId !== tempUserMessage.tempId));
-      setError('Failed to send message. Please try again.');
+      setError('Failed to get a response. Please try again.');
     } finally {
       setLoading(false);
     }

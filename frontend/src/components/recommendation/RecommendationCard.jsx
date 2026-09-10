@@ -43,6 +43,34 @@ function DetailsModal({ recommendation, onClose }) {
             </p>
           </div>
 
+          {/* Related Tenders */}
+          {recommendation.tenders && recommendation.tenders.length > 0 && (
+            <div className="mt-2">
+              <h3 className="text-xs font-semibold text-gray-700 mb-1">Related Tenders</h3>
+              <table className="w-full text-xs border-collapse">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="border p-1 text-left">Tender</th>
+                    <th className="border p-1 text-left">Organization</th>
+                    <th className="border p-1 text-left">Location</th>
+                    <th className="border p-1 text-left">Closing Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {recommendation.tenders.map((t, idx) => (
+                    <tr key={idx} className="hover:bg-gray-100">
+                      <td className="border p-1">{t.title}</td>
+                      <td className="border p-1">{t.organization}</td>
+                      <td className="border p-1">{t.location}</td>
+                      <td className="border p-1">{t.closing_date}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+
           {/* Why recommended */}
           <div>
             <h3 className="text-sm font-semibold text-gray-700 mb-2">Why Recommended?</h3>

@@ -5,11 +5,7 @@ function SettingsPage() {
   const { user, logout } = useAuth();
 
   const handleLogout = async () => {
-    try {
-      await logoutService();
-    } catch {
-      // proceed with logout regardless
-    }
+    await logoutService();
     logout();
   };
 

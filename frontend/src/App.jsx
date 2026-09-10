@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/common/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
+import DemoPage from './pages/DemoPage';
 import ChatPage from './pages/ChatPage';
 import SettingsPage from './pages/SettingsPage';
 
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           {/* Public route */}
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/demo" element={<DemoPage />} />
 
           {/* Protected routes */}
           <Route

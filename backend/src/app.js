@@ -9,6 +9,7 @@ const passport = require('./config/passport');
 const authRoutes = require('./routes/authRoutes');
 const chatRoutes = require('./routes/chatRoutes');
 const messageRoutes = require('./routes/messageRoutes');
+const recommendationRoutes = require('./routes/recommendationRoutes');
 
 const app = express()
 
@@ -40,6 +41,7 @@ app.use(passport.initialize());
 app.use('/api/auth', authRoutes);
 app.use('/api/chats', chatRoutes);
 app.use('/api/chats', messageRoutes);
+app.use('/api/recommendations', recommendationRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
